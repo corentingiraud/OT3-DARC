@@ -33,7 +33,7 @@ def round1_preprocessing(ground_truth_file_path, submission_file_path=None):
 
     """
     # Read the ground truth file
-    ground_truth = pd.read_csv(ground_truth_file_path, sep=',', engine='c',\
+    ground_truth = pd.read_csv(ground_truth, sep=',', engine='c',\
                                na_filter=False, low_memory=False)
     ground_truth.columns = T_COL.values()
 
